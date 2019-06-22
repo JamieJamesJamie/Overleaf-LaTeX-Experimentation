@@ -1,0 +1,24 @@
+\section{First table}
+\label{sec:1}
+
+\begin{longtable}[c]{| c | c |}
+    \caption{Long table caption for \cref{sec:1}.\label{table:ch1}}\\
+    
+    \hline
+    \multicolumn{2}{| c |}{Heading}\\
+    \hline
+    Subheading & Another subheading\\
+    \hline
+    \endfirsthead
+    
+    \hline
+    \endfoot
+    
+    \hline\hline
+    \endlastfoot
+    
+    1 & 2\\
+    3 & 4\\
+\end{longtable}
+
+I am referencing \cref{table:ch1} (\cref{sec:1}'s table) and \cref{table:ch2} (\cref{sec:2}'s table).
